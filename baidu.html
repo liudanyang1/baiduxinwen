@@ -1,109 +1,742 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>百度新闻</title>
-	<meta charset="utf-8">
-	<style type="text/css">
-		.a{
-			width: 100%;
-			height: 150px;
-			border: 1px solid black;
-		}
-		.b{
-			width: 100%;
-			height: 55px;
-			border: 1px solid black;
-			background-color:#01204f;
-		}
-		.c{
-			width: 700px;
-			height: 1000px;
-			border: 1px solid black;
-		}
-		.d{
-			width: 631px;
-			height: 1000px;
-			border: 1px solid black;
-			position: relative;
-			left: 701px;
-			top:-1002px;
-		}
-		.e{
-			position: relative;
-			left: -69px;
-			top: 24px;
-		}
-		ul{
-			list-style-type: none;
+    <title>百度新闻</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" defer src="1.js"></script>
+    <style type="text/css">
+    .a {
+        width: 100%;
+        height: 150px;
+        border: 1px solid black;
+    }
+    
+    .b {
+        width: 100%;
+        height: 55px;
+        border: 1px solid black;
+        background-color: #01204f;
+    }
+    .b a{
+    	color: white;
+    }
+    .c {
+        width: 700px;
+        height: 1000px;
+        border: 0px solid white;
+    }
+    
+    .d {
+        width: 631px;
+        height: 1000px;
+        border: 1px solid black;
+        position: relative;
+        left: 701px;
+        top: -1002px;
+    }
+    
+    .e {
+        position: relative;
+        left: -69px;
+        top: 24px;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .f li {
+        float: left;
+        padding-right: 25px;
+    }
+    
+    .f {
+        position: absolute;
+        left: 293px;
+        top: 50px;
+        text-decoration: none;
+    }
+    
+    .g {
+        position: relative;
+        left: -80px;
+        top: 110px;
+        font-size: 10px;
+    }
+    
+    .h {
+        position: relative;
+        left: 1000px;
+        top: 40px;
+    }
+    
+    .i li {
+        float: left;
+        padding-right: 15px;
+    }
+    
+    .i {
+        position: relative;
+        left: 923px;
+        top: -4px;
+    }
+    
+    .b li {
+        float: left;
+        padding-right: 25px;
+        font-weight: bolder;
+        color: white;
+    }
+    
+    .b li:hover {
+        background-color: red;
+    }
+    
+    .k {
+        position: absolute;
+        left: -15px;
+        top: 152px;
+        font-size: 22px;
+    }
+    .m{
+    	position: absolute;;
+    	left: 37px;
+    	top: 2px;
+    }
+    
+    #left {
+        background-color: white;
+        width: 425px;
+        height: 1000px;
+        position: relative;
+        left: 180px;
+    }
+    
+    #left-d1 {
+        position: relative;
+        float: left;
+        padding: 0 10px;
+        font-size: 22px;
+        font-weight: bolder;
+        border-bottom: 2px solid blue;
+    }
+    
+    #left-d2 {
+        position: relative;
+        float: left;
+        padding: 0 10px;
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    
+    #left-hr1 {
+        position: relative;
+        left: 12px;
+        top: 1px;
+        width: 270px;
+    }
+    
+    #left-li1 {
+        font-size: 20px;
+        font-weight: bolder;
+        color: #222222;
+        list-style: square;
+    }
+    
+    #left-li1-ul {
+        width: 425px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    
+    #left-li1-ul li {
+        float: left;
+        font-size: 12px;
+        list-style: none;
+        margin-left: -24px;
+        margin-right: 36px;
+    }
+    
+    #left-li1:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li1-ul-li1:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li1-ul-li2:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li1-ul-li3:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li2 {
+        font-size: 20px;
+        font-weight: bolder;
+        color: #222222;
+        list-style: square;
+    }
+    
+    #left-li2-ul {
+        width: 425px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    
+    #left-li2-ul li {
+        float: left;
+        font-size: 12px;
+        list-style: none;
+        margin-left: -24px;
+        margin-right: 42px;
+    }
+    
+    #left-li2:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li2-ul-li1:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li2-ul-li2:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li2-ul-li3:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li3 {
+        font-size: 20px;
+        font-weight: bolder;
+        color: #222222;
+        list-style: square;
+    }
+    
+    #left-li3-ul {
+        width: 425px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    
+    #left-li3-ul li {
+        float: left;
+        font-size: 12px;
+        list-style: none;
+        margin-left: -24px;
+        margin-right: 42px;
+    }
+    
+    #left-li3:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li3-ul-li1:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li3-ul-li2:hover {
+        text-decoration: underline;
+    }
+    
+    #left-li3-ul-li3:hover {
+        text-decoration: underline;
+    }
+    
+    #left-hr2 {
+        position: relative;
+        left: -2px;
+        top: -6px;
+        width: 420px;
+        border-style: dashed;
+        color: grey;
+    }
+    
+    #left-li4 {
+        font-size: 16px;
+        font-weight: bolder;
+        color: #222222;
+        list-style: square;
+    }
+    
+    #left-li4-ul {
+        width: 425px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    
+    #left-li4-ul li {
+        line-height: 25px;
+        font-size: 14px;
+        margin-left: -24px;
+        margin-right: 42px;
+        list-style: square;
+    }
+    
+    #left-li4:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li4-ul-li1:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li4-ul-li2:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li4-ul-li3:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li4-ul-li4:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li4-ul-li5:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li5 {
+        font-size: 16px;
+        font-weight: bolder;
+        color: #222222;
+        list-style: square;
+        position: relative;
+        top: -40px;
+    }
+    
+    #left-li5-ul {
+        width: 425px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        position: relative;
+        top: -40px;
+    }
+    
+    #left-li5-ul li {
+        line-height: 25px;
+        font-size: 14px;
+        margin-left: -24px;
+        margin-right: 42px;
+        list-style: square;
+    }
+    
+    #left-li5:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li5-ul-li1:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li5-ul-li2:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li5-ul-li3:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li5-ul-li4:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li5-ul-li5:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li6 {
+        font-size: 16px;
+        font-weight: bolder;
+        color: #222222;
+        list-style: square;
+        position: relative;
+        top: -80px;
+    }
+    
+    #left-li6-ul {
+        width: 425px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        position: relative;
+        top: -80px;
+    }
+    
+    #left-li6-ul li {
+        line-height: 25px;
+        font-size: 14px;
+        margin-left: -24px;
+        margin-right: 42px;
+        list-style: square;
+    }
+    
+    #left-li6:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li6-ul-li1:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li6-ul-li2:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li6-ul-li3:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li6-ul-li4:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li6-ul-li5:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li7 {
+        font-size: 16px;
+        font-weight: bolder;
+        color: #222222;
+        list-style: square;
+        position: relative;
+        top: -120px;
+    }
+    
+    #left-li7-ul {
+        width: 425px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        position: relative;
+        top: -120px;
+    }
+    
+    #left-li7-ul li {
+        line-height: 25px;
+        font-size: 14px;
+        margin-left: -24px;
+        margin-right: 42px;
+        list-style: square;
+    }
+    
+    #left-li7:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li7-ul-li1:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li7-ul-li2:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li7-ul-li3:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li7-ul-li4:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li7-ul-li5:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li8 {
+        font-size: 16px;
+        font-weight: bolder;
+        color: #222222;
+        list-style: square;
+        position: relative;
+        top: -160px;
+    }
+    
+    #left-li8-ul {
+        width: 425px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        position: relative;
+        top: -160px;
+    }
+    
+    #left-li8-ul li {
+        line-height: 25px;
+        font-size: 14px;
+        margin-left: -24px;
+        margin-right: 42px;
+        list-style: square;
+    }
+    
+    #left-li8:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li8-ul-li1:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li8-ul-li2:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li8-ul-li3:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li8-ul-li4:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    
+    #left-li8-ul-li5:hover {
+        text-decoration: underline;
+        color: #356B94;
+    }
+    #a {
+    position: absolute;
+    top: 168px;
+    left: 1238px;
+    color: white;
+    padding: 11px 8px;
+    font-weight: bolder;
+    width: 35px;
+}
 
-		}
-        .f li{
-			float: left;
-			padding-right: 25px;
-		}
-		.f{
-			position: absolute;
-			left: 293px;
-			top: 50px;
-			text-decoration:none;
-		}
-		
-        .g{
-        	position: relative;
-        	left: -80px;
-        	top: 110px;
-        	font-size: 10px;
-        }
-        .h{
-        	position: relative;
-        	left: 1000px;
-        	top: 40px;
-        }
-        .i li{
-        	float: left;
-			padding-right: 15px;
+#b {
+    position: absolute;
+    top: 203px;
+    left: 1238px;
+    background-color: #0  204F;
+    color: white;
+    line-height: 30px;
+    width: 50px;
+    z-index: 100;
+    display: none;
+}
 
-        }
-        .i{
-        	position: relative;
-        	left: 923px;
-        	top: -4px;
-        }
-        .f li:first-child {font-weight: bold;color: black;};
-        
-	</style>
+#m:hover #b {
+    display: block;
+}
+
+#m:hover #a {
+    background-color: red;
+}
+
+#tr1:hover {
+    background-color: red;
+}
+
+#tr2:hover {
+    background-color: red;
+}
+
+#tr3:hover {
+    background-color: red;
+}
+.z{
+	position: absolute;
+	left: 0px;
+	top: 306px;
+}
+#erweima {
+	    display: none;
+	    position: absolute;
+	    left: 500px;
+	    top: 14px;
+	}
+	#ewm:hover #erweima {
+	    display: block;
+	}
+   .b li:first-child {
+        background-color: red;
+    }
+    
+    .f li:first-child {
+        font-weight: bold;
+        color: black;
+    }
+    </style>
 </head>
-<body>
-<div class="a">
-<ul class="f"> 
-	<li>新闻</li>
-	<li><a href="##">网页</a></li>
-	<li><a href="##">贴吧</a></li>
-	<li><a href="##">知道</a></li>
-	<li><a href="##">音乐</a></li>
-	<li><a href="##">图片</a></li>
-	<li><a href="##">视频</a></li>
-	<li><a href="##">地图</a></li>
-	<li><a href="##">百科</a></li>
-	<li><a href="##">文库</a></li>
-</ul>
-<ul class="i">
-	<li><a href="##">登录&nbsp|</a></li>
-	<li><a href="##">注册&nbsp|</a></li>
-	<li><a href="##">百度新闻客户端&nbsp|</a></li>
-	<li><a href="##">百度首页</a></li>
-</ul>
-<div class="g">
-<input type="radio" name="a" value="hh"><label>新闻全文</label>
-<input type="radio" name="a" value="hh"><label>新闻标题</label>
-</div>
-    <img src="zuixin.png" class="h">
-	<img src="baidu.png" class="e">
-	<input type="text" name="aa" style="width:500px;height:32px;margin-left:-76px;margin-top:35px"><button style="width:108px;height:40px;font-size:14px">百度一下</button>
-</div>
 
-<div class="b"></div>
-<div class="c"></div>
-<div class="d"></div>
+<body>
+    <div class="a">
+        <ul class="f">
+            <li>新闻</li>
+            <li><a href="##">网页</a></li>
+            <li><a href="##">贴吧</a></li>
+            <li><a href="##">知道</a></li>
+            <li><a href="##">音乐</a></li>
+            <li><a href="##">图片</a></li>
+            <li><a href="##">视频</a></li>
+            <li><a href="##">地图</a></li>
+            <li><a href="##">百科</a></li>
+            <li><a href="##">文库</a></li>
+        </ul>
+        <ul class="i">
+            <li><a href="##">登录&nbsp|</a></li>
+            <li><a href="##">注册&nbsp|</a></li>
+            <li id="ewm"><a href="##">百度新闻客户端&nbsp|<img src="erweima.jpg" id="erweima"></a></li>
+            <li><a href="##">百度首页</a></li>
+        </ul>
+        <div class="g">
+            <input type="radio" name="a" value="hh">
+            <label>新闻全文</label>
+            <input type="radio" name="a" value="hh">
+            <label>新闻标题</label>
+        </div>
+        <img src="zuixin.png" class="h">
+        <img src="baidu.png" class="e">
+        <input type="text" name="aa" style="width:500px;height:32px;margin-left:-76px;margin-top:35px">
+        <button style="width:108px;height:40px;font-size:14px">百度一下</button>
+    </div>
+    <div class="b">
+        <ul class="k">
+            <li><a href="">首页</a></li>
+            <li><a href="">百家</a></li>
+            <li><a href="">财经</a></li>
+            <li><a href="">娱乐</a></li>
+            <li><a href="">奥运会</a></li>
+            <li><a href="">互联网</a></li>
+            <li><a href="">时尚</a></li>
+            <li><a href="">汽车</a></li>
+            <li><a href="">国内</a></li>
+            <li><a href="">国际</a></li>
+            <li><a href="">军事</a></li>
+            <li><a href="">视频</a></li>
+            <li><a href="">传媒</a></li>
+            <li><a href="">个性推荐</a></li>
+            <li><a href="">房产</a></li>
+            <li><a href="">名站</a></li>
+        </ul>
+         <div id="m">
+            <div id="a">更多</div>
+            <table id="b">
+                <tr>
+                    <td id="tr1">科技</td>
+                </tr>
+                <tr>
+                    <td id="tr2">女人</td>
+                </tr>
+                <tr>
+                    <td id="tr3">游戏</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    <div id="left">
+        <div id="left-d">
+            <div id="left-d1">热点要闻</div>
+            <div id="left-d2">| 个性推荐</div>
+            <hr id="left-hr1">
+            <li id="left-li1">习近平谈网络安全观</li>
+            <ul id="left-li1-ul">
+                <li id="left-li1-ul-li1">重温习近平的庄严宣誓</li>
+                <li id="left-li1-ul-li2">铭记历史、珍爱和平</li>
+                <li id="left-li1-ul-li3">国务院向残奥代表团致贺电</li>
+            </ul>
+            <li id="left-li2">李克强抵达纽约出席联合国大会 专题</li>
+            <ul id="left-li2-ul">
+                <li id="left-li2-ul-li1">我国首次评选表彰网络安全先进典型</li>
+                <li id="left-li2-ul-li2">网络安全博览会</li>
+                <li id="left-li2-ul-li3">专题</li>
+            </ul>
+            <li id="left-li3">30省取消农业户口 农转非不一定放弃土地</li>
+            <ul id="left-li3-ul">
+                <li id="left-li3-ul-li1">非农户口福利更好</li>
+                <li id="left-li3-ul-li2">北京研究“户随人走”新政 盘点落户途径</li>
+            </ul>
+            <hr id="left-hr2">
+            <li id="left-li4">日称将与美在南海军演 外交部：哀莫大于心不死</li>
+            <ul id="left-li4-ul">
+                <li id="left-li4-ul-li1">房价创新高 购房者称“一个月每平米涨了一万”</li>
+                <li id="left-li4-ul-li2">卫计委发文降低药占比 减少患者自付比例</li>
+                <li id="left-li4-ul-li3">军队明年起大幅压减学术学位研究生招生数量</li>
+                <li id="left-li4-ul-li4">奥巴马就全美多起袭击事件表态 称将继续打击ISIS</li>
+                <li id="left-li4-ul-li5">用住房公积金补充养老保险违法? 专家建议:修法</li>
+            </ul>
+            <li id="left-li5">山西吕梁投资40亿建高速半年后返工 疑因矿企采空</li>
+            <ul id="left-li5-ul">
+                <li id="left-li5-ul-li1">新规施行半月朋友圈广告仍存违规 终结乱象有多难</li>
+                <li id="left-li5-ul-li2">朝鲜成功进行火箭新型发动机地上点火试验</li>
+                <li id="left-li5-ul-li3">29省区市晒收费公路账单 债务累计余额平均为1534亿元</li>
+                <li id="left-li5-ul-li4">中国首次从法国引渡逃犯 涉非法吸储2000万</li>
+                <li id="left-li5-ul-li5">个税改革加速推进：养老、二孩、房贷利息有望抵扣</li>
+            </ul>
+            <li id="left-li6">北大才子辞公职卖猪肉:公职收入低难以维持生计</li>
+            <ul id="left-li6-ul">
+                <li id="left-li6-ul-li1">网约车新规率先落地江苏：不得在机场、火车站揽客</li>
+                <li id="left-li6-ul-li2">中企运煤船向澳赔偿近2亿 曾因搁浅污染大堡礁</li>
+                <li id="left-li6-ul-li3">纽约爆炸案 希拉里特朗普说了啥让美国舆论炸了锅</li>
+                <li id="left-li6-ul-li4">广州检出韩国进口锅重金属铬等物质超标</li>
+                <li id="left-li6-ul-li5">辽宁省委组织部：拟集中调整4地市主要领导</li>
+            </ul>
+            <li id="left-li7">新华社：严查辽宁贿选案，反腐坚持“零容忍”</li>
+            <ul id="left-li7-ul">
+                <li id="left-li7-ul-li1">造假者用淀粉制35万盒假救命药 出狱两月重操旧业</li>
+                <li id="left-li7-ul-li2">日本记者刺探中国航母情报:未进厂区拍到影子</li>
+                <li id="left-li7-ul-li3">孩子人际交往有障碍 母亲花费近2万替其补情商</li>
+                <li id="left-li7-ul-li4">海南一男子将女儿扔进水库致其溺亡 已被刑事拘留</li>
+                <li id="left-li7-ul-li5">4岁女童失踪77小时 陕西警方调用无人机找回</li>
+            </ul>
+            <li id="left-li8">广东拟禁止宾馆客房安装监控系统：保护公民隐私</li>
+            <ul id="left-li8-ul">
+                <li id="left-li8-ul-li1">白领遭抢劫脑死亡 父母捐献爱女器官</li>
+                <li id="left-li8-ul-li2">男子盗取迪士尼门票二维码2600多张被逮捕</li>
+                <li id="left-li8-ul-li3">杭州白领放弃购房:爸妈存几十万 不够一周蒸发</li>
+                <li id="left-li8-ul-li4">女子借钱用裸照作担保 钱没到账反被敲诈</li>
+                <li id="left-li8-ul-li5">宁波一研究生被骗1880元:骗子男扮女 按范本聊天</li>
+            </ul>
+        </div>
+    </div>
+    <div class="d">
+    	<div id="right">
+        <img src="1.png" id="img">
+        <input id="img1" type="radio">
+        <input id="img2" type="radio">
+        <input id="img3" type="radio">
+        <input id="img4" type="radio">
+        <input id="img5" type="radio">
+        <input id="img6" type="radio">
+        <input id="img7" type="radio">
+        <input id="img8" type="radio">
+    </div>
+    <img src="12.png" class="z">
 </body>
+
 </html>
